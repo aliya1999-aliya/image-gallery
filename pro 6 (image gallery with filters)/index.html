@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery with Filters</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+
+<!-- FILTER BUTTONS -->
+<div class="filter-buttons">
+  <button class="active" data-filter="all">All</button>
+  <button data-filter="nature">Nature</button>
+  <button data-filter="city">City</button>
+  <button data-filter="people">People</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery" id="gallery">
+  <img src="nature1.jpg" class="image nature">
+  <img src="nature2.jpg" class="image nature">
+  <img src="city1.jpg" class="image city">
+  <img src="city2.jpg" class="image city">
+  <img src="people1.jpg" class="image people">
+</div>
+
+<!-- IMAGE VIEWER (same tab) -->
+<div class="viewer" id="viewer">
+  <img id="viewerImage">
+  <br>
+  <button id="backBtn">⬅ Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
